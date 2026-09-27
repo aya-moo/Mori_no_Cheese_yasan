@@ -12,7 +12,6 @@ body {
   /* ← 背景を固定 */
   height: 800px;
 
-
 }
 
 header {
@@ -73,7 +72,7 @@ header {
   margin-top: 500px;
   /* PC 基準 */
   padding: 350px 20px 80px;
-  min-height: 1600px;
+  min-height: 1000px;
   position: relative;
   box-sizing: border-box;
 
@@ -176,7 +175,7 @@ header {
   margin: 0 auto;
   /* top: 50%; */
   /* left: 25%; */
-  margin-top: 1000px;
+  margin-top: 900px;
   width: 100%;
   /* transform: translate(-25%, 0);  */
   /* width: calc(100% - 2%);  */
@@ -197,7 +196,7 @@ input[type=radio]:checked+label {
 
 
 .tab {
-  width: calc(100% / 5);
+  width: 23%;
   height: 47px;
   background-color: #d9d9d9;
   line-height: 47px;
@@ -211,7 +210,7 @@ input[type=radio]:checked+label {
   transition: all 0.2s ease;
   border-radius: 10px 10px 0 0;
   background: #bababa;
-  margin-left: 40px;
+  margin-left: 1%;
 }
 
 .tab_con {
@@ -380,7 +379,9 @@ footer {
 @media (max-width: 767px) {
 
 /* ▼▼▼ここからヘッダー▼▼▼ */ 
-
+header {
+  height: 110px;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -395,8 +396,7 @@ footer {
 
   .main {
     background-position: center top;
-    background-attachment: scroll;
-    height: 600px;
+    background-size: 100% auto;
   }
 
 
@@ -453,10 +453,6 @@ footer {
     margin-bottom: 20px;
   }
 
-.menu-container {
-    width: 100%;
-    max-width: 100%;
-  }
 
  .shop-info {
   flex-direction: column; /* ← 横並びを縦に */
@@ -467,7 +463,13 @@ footer {
 
  /* ▲▲▲ここまでヘッダー▲▲▲ */
 
+  .content-wrapper {
+  margin-top: 100px;
+}
 
+  .menu-container {
+  margin-top: 600px;
+}
 
    /* キャッチコピー */
   .catch-copy1 {
@@ -518,14 +520,12 @@ footer {
 
   /* メニュータブ */
   .tab {
-    width: 100%;
-    margin-left: 0;
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
     margin-bottom: 5px;
   }
 
-  .menu-container {
-  margin-top:1100px;
-  }
 
 
   /* 店舗情報 */
