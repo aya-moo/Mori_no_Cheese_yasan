@@ -3,50 +3,70 @@
 
 <head>
   <meta charset="utf-8">
-  <!--「width=device-width」は「デバイスの実際の幅に合わせて表示して！」-->
+  <!--「width=device-width」は「デバイスの実際の幅に合わせて1倍で表示して！」-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>森のチーズ屋さん</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css\stylesheet.css">
 </head>
 
 <body>
   <div class="main">
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <a href="#">
-            <img class="logo" src="image\rogo2.svg">
-          </a>
-        </div>
-        <div class="header-right">
-          <ul>
-            <li><a href="#TOP">TOP</a></li>
-            <li><a href="#MENU">MENU</a></li>
-            <li><a href="#ABOUT">ABOUT</a></li>
-          </ul>
-        </div>
+
+    <!--▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ここからヘッダー▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+   <header>
+  <div class="header-container">
+
+    <!-- ロゴ -->
+    <div class="header-left">
+      <a href="#">
+        <img class="logo" src="image/rogo2.svg" alt="森のチーズ屋さん">
+      </a>
+    </div>
+
+    <!-- チェックボックス（超重要） -->
+    <input type="checkbox" id="drawer_input">
+
+    <nav class="header-right">
+      <ul>
+        <li><a href="#TOP">TOP</a></li>
+        <li><a href="#MENU">MENU</a></li>
+        <li><a href="#ABOUT">ABOUT</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <!-- ハンバーガー -->
+  <label for="drawer_input" class="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+</header>
+  <!--▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ここまでヘッダー▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+
+
+
+  <!--▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ここからコンセプト▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+  <div class="content-wrapper">
+    <div class="catchcopy-wrapper-">
+      <h1 class="catch-copy1">CHEESE LOVERS<br>WELCOME!</h1>
+      <h2 class="catch-copy2">ちょっとだけ<br>しあわせ多めでいこう。</h2>
+    </div>
+
+
+    <div class="concept-wrapper">
+      <div class="concept-left">
+        <img class="concept-img" src="image\Cheese-Latte.png" alt="チーズラテ">
+        <img class="concept-img" src="image\Basque-Cheesecake.png" alt="チーズケーキ">
       </div>
 
-    </header>
-
-    <div class="content-wrapper">
-      <div class="catchcopy-wrapper-">
-        <h1 class="catch-copy1">CHEESE LOVERS<br>WELCOME!</h1>
-        <h2 class="catch-copy2">ちょっとだけ<br>しあわせ多めでいこう。</h2>
-      </div>
-
-
-      <div class="concept-wrapper">
-        <div class="concept-left">
-          <img class="concept-img" src="image\Cheese-Latte.png" alt="チーズラテ">
-          <img class="concept-img" src="image\Basque-Cheesecake.png" alt="チーズケーキ">
-        </div>
-
-        <div class="concept-center">
-          <img class="concept-logo" src="image\rogo1.svg">
-          <h2 class="concept-title">CONCEPT</h2>
-          <div class="concept-text">
+      <div class="concept-center">
+        <img class="concept-logo" src="image\rogo1.svg">
+        <h2 class="concept-title">CONCEPT</h2>
+        <div class="concept-text">
           <p>森のチーズ屋さんは、<br>
             ”ちいさなしあわせチーズ”をテーマに、<br>
             世界中から集めた美味しいチーズを<br>
@@ -60,39 +80,136 @@
           <p>ここでしか味わえない <br>
             “チーズ好きのためのメニュー”を<br>
             ぜひお楽しみください。</p>
-          </div>
         </div>
-
-        <div class="concept-right">
-          <img class="concept-img" src="image\Tiramisu.png">
-          <img class="concept-img" src="image\Cheese-Smoothie.png">
-        </div>
-
       </div>
+      <div class="concept-right">
+        <img class="concept-img" src="image\Tiramisu.png" alt="ティラミス">
+        <img class="concept-img" src="image\Cheese-Smoothie.png" alt="チーズスムージー">
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ここまでコンセプト▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+
+
+  <!--▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ここからメニュー▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+  <div id="MENU" class="menu-parent">
+
+    <div class="menu-container">
+      <div class="tab-box">
+        <input type="radio" id="radio1" name="tabs" checked />
+        <label class="tab" for="radio1">モーニング</label>
+        <input type="radio" id="radio2" name="tabs" />
+        <label class="tab" for="radio2">ランチ</label>
+        <input type="radio" id="radio3" name="tabs" />
+        <label class="tab" for="radio3">スイーツ</label>
+        <input type="radio" id="radio4" name="tabs" />
+        <label class="tab" for="radio4">ドリンク</label>
+        <div class="tab_con" id="tb1">
+          <h2>モーニング</h2>
+          <img src="image\Menu-Breakfast.jpg" alt="モーニング">
+          <p>朝の明るい日差しが差し込む店内で、チーズの香り広がる、<br>
+            朝のごちそうタイムはいかがですか？<br>
+            ふんわり焼き上げたトーストに、<br>
+            とろけるチーズをたっぷりのせた「チーズトーストプレート」は、<br>
+            彩り豊かな副菜と香り高い特製コーヒーと一緒に。<br>
+            甘いものがおすきな方には、ホイップチーズとほんのり甘いあんこを合わせた「小倉チーズトースト」もおすすめ。<br>
+            とろけるチーズとやさしい甘さで、朝からほっと心が満たされます。</p>
+          <p class="time">8:00〜11:00</p>
+        </div>
+        <div class="tab_con" id="tb2">
+          <h2>ランチ</h2>
+          <img src="image\Menu-Lunch.jpg" alt="ランチ">
+          <p>チーズの香りとコクを楽しめるランチメニューも揃えています。<br>
+            じっくり煮込んだやわらかチキンのチーズカレーや、<br>
+            フレッシュな野菜とチーズが彩るパスタなど、<br>
+            満足感たっぷりの一皿をご用意。<br>
+            お子さま向けには、まろやかなチーズ入りキッズカレーもございます。<br>
+            ランチタイムにほっと一息、<br>
+            チーズとともにしっかり元気をチャージしてください。
+          </p>
+          <p class="time">11:00〜15:00</p>
+        </div>
+
+        <div class="tab_con" id="tb3">
+          <h2>スイーツ</h2>
+          <img src="image\Menu-Sweets.jpg" alt="スイーツ">
+          <p>チーズのコクがたっぷり詰まったケーキで、<br>
+            ひと口ごとに幸せな時間を。<br>
+            濃厚でとろける味わいは、<br>
+            一度食べたらやみつきになるおいしさです。<br>
+            特製の紅茶やチーズティー、ソフトドリンクと合わせれば、<br>
+            カフェタイムがより贅沢に。<br>
+            もちろん、ケーキはお持ち帰りもできるので、<br>
+            手土産やちょっとしたごほうびにもぴったりです。</p>
+        </div>
+
+        <div class="tab_con" id="tb4">
+          <h2>ドリンク</h2>
+          <img src="image\Menu-Drinks.jpg" alt="ドリンク">
+          <p>チーズトーストやスイーツと一緒に楽しみたい、<br>
+            特製ブレンド紅茶はいかがですか？<br>
+            フルーティーな香りとやさしい甘みが口いっぱいに広がり、<br>
+            チーズとの相性も抜群です。<br>
+            カフェインが気になる方や妊婦さんには、<br>
+            カフェインレスの紅茶もご用意しています。<br>
+            さらに、おうちでもチーズカフェのひとときを楽しめる、<br>
+            ドリップティーパックもございます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ここまでメニュー▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲-->
 
 
 
+  <!--▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ここから店舗情報▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+  <div id="ABOUT" class="shop-info">
 
-
-
-
+    <!-- 左：画像 -->
+    <div class="shop-image">
+      <img src="image\cheese-cafe2.jpg" alt="店舗外観">
     </div>
 
-
-
-
-
-
-
-
-
-
+    <!-- 右：テキスト -->
+    <div class="shop-text">
+      <h2>森のチーズ屋さん</h2>
+      <p>〒123-4567</p>
+      <p>123 Forest Lane, Maple Town</p>
+      <p>TEL：080-1234-5678</p>
+      <p>営業時間：10:00〜19:00</p>
+    </div>
 
   </div>
+  <!--▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ここまで店舗情報▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲-->
 
 
+  <!--▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ここからフッター▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼-->
+ <footer>
+  <div class="footer-container">
 
+    <!-- 中央：ロゴ -->
+    <div class="footer-center">
+      <img class="footer-logo" src="image\rogo3.svg" alt="森のチーズ屋さん">
+      <p>2026©森のチーズ屋さん</p>
+    </div>
 
+    <!-- 右：メニュー -->
+    <nav class="footer-right">
+      <ul>
+        <li><a href="#TOP">TOP</a></li>
+        <li><a href="#MENU">MENU</a></li>
+        <li><a href="#ABOUT">ABOUT</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</footer>
+
+  <!--▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ここまでフッター▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲-->
+
+  </div>
 </body>
+<script src="./JS/script.js"></script>
 
 </html>
