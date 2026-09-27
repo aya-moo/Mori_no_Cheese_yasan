@@ -393,6 +393,12 @@ footer {
   width: 200px;
 }
 
+  .main {
+    background-position: center top;
+    background-attachment: scroll;
+    height: 600px;
+  }
+
 
 /* ===== ハンバーガー ===== */
 /* デフォルト（PC） */
